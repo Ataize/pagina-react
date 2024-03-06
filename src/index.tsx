@@ -9,6 +9,7 @@ import Header from "./componentes/Header";
 import Footer from "./componentes/Footer";
 import Discover from "./routes/discover";
 import Model from "./routes/model";
+import NotFound from "./routes/not-found";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -22,6 +23,7 @@ root.render(
         <Route path="/models" element={<Models />} />
         <Route path="/models/:modelId" element={<Model />} />
         <Route path="/discover" element={<Discover />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </BrowserRouter>

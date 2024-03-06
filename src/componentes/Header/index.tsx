@@ -4,9 +4,9 @@ import "./header.scss";
 const Header = () => {
   return (
     <header>
-      <a href="#" className="logo" aria-label="Logo">
+      <Link to="/" className="logo" aria-label="Logo">
         <img src={logo} alt="Logo da Porsche" />
-      </a>
+      </Link>
 
       <nav className="menu">
         <ul>
